@@ -110,6 +110,9 @@ public class SearchComment {
 				if (!jsonobj.startsWith("{")) {
 					substring = jsonobj.substring(1, jsonobj.length() - 1);
 					// iListener.falied(goodsbean, position);
+					
+					substring = nid + "#" + substring;
+					
 					System.out.println(substring);
 					conmmentJson.add(substring);
 				} else {
@@ -136,7 +139,7 @@ public class SearchComment {
                 // System.out.println("nid=" + nid + "的暂无评论");
 				// }
 				// return conmmentJson;
-
+				// if(i == 0) break;
 			}
 
 		} catch (IOException e2)
