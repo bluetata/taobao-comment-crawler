@@ -20,7 +20,7 @@ public class AppRun {
             System.out.println(str);
             // good id :563647803186
             filename = str.substring(0, str.indexOf("#"));
-            write2File(filename, filepath, str);
+            // write2File(filename, filepath, str);
             JSONObject parseObject = JSONObject.parseObject(str.substring(str.indexOf("#") + 1));
             JSONArray jsonArray = parseObject.getJSONArray("comments");
 
